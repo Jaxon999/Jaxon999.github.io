@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script>$(document).ready(function() {
+            $(document).delegate('.open', 'click', function(event){
+              $(this).addClass('oppenned');
+              event.stopPropagation();
+            })
+            $(document).delegate('body', 'click', function(event) {
+              $('.open').removeClass('oppenned');
+            })
+            $(document).delegate('.cls', 'click', function(event){
+              $('.open').removeClass('oppenned');
+              event.stopPropagation();
+            });
+          });
+          </script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <img id="Logo" src="img/NEWLOGO.png" alt="Logo">
+        <div class="open"> 
+            <span class="cls"></span> 
+            <span>
+              <ul class="sub-menu ">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
+                <li> <a href="about.html">About</a> </li>
+                <li> <a href="Menu.html">Menu</a> </li>
+              </ul>
+            </span> 
+            <span class="cls"></span> 
+          </div>
+          <h2>What are we?</h2>
+
+          <p>Donut Delights has been serving CU
+            with the highest quality donuts and coffees since
+            1971. Nestled in downtown Urbana, Donut Delights has become a haven for “Gotta
+            have it” breakfast treats. Our donuts are baked fresh twice daily and our coffee’s
+            brewed every fifteen minutes. If you have never been to CU’s
+            hidden gem, you are
+            missing out.</p>
+
+            <span id="ST">
+            Store hours
+            Monday-Friday
+            5:30-3:30
+            Saturday-Sunday
+            6:30-1:00
+            </span>
+
+            <img id="storefront" src="img/Storefront.jpg" alt="Storefront" height="350" width="400">
+            
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
