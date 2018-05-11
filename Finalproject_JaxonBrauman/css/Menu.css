@@ -97,9 +97,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-    background-image: url("../img/cac.JPG");
-    background-position: 0px -1350px;
+    background-image: url("../img/Donut.jpg");
+    background-position: 160px 0px;
     background-repeat: no-repeat;
+    background-color: wheat;
 }
 
 .open {
@@ -129,10 +130,12 @@ body {
     overflow: hidden;
     transition: all 0.4s ease;
   }
-  body p {
+
+
+  #BS {
     background-color: rgba(228, 226, 236, 0.637);
     margin: 1.5em 15em;
-    font-size: 20pt;
+    font-size: 15pt;
     padding: .5em;
     font-family: Verdana;
     border: 3px groove #110D2E;
@@ -141,6 +144,21 @@ body {
     position: absolute;
     top: 15%;
     z-index: 3;
+    left: 7%;
+  }
+  body p {
+    background-color: rgba(228, 226, 236, 0.637);
+    margin: 1.5em 15em;
+    font-size: 15pt;
+    padding: .5em;
+    font-family: Verdana;
+    border: 3px groove #110D2E;
+    border-radius: 18px;
+    box-shadow: 2px 2px 2px 2px saddlebrown;
+    position: absolute;
+    top: 15%;
+    z-index: 3;
+    left: 25%;
     
   }
 

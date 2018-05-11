@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+   html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -140,13 +140,19 @@ body {
     box-shadow: 2px 2px 2px 2px saddlebrown;
     position: absolute;
     top: 15%;
+    right: 30%;
     z-index: 3;
     
+  }
+  #Map {
+    position: absolute;
+    top: 17%;
+    right: 25%;
   }
 
   #Form {
       position: absolute;
-      top: 50%;
+      top: 55%;
       right: 50%;
       border: 3px groove #110D2E;
       border-radius: 18px;

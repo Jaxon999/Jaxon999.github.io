@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Menu</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,20 +12,73 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/Menu.css">
+
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script>$(document).ready(function() {
+            $(document).delegate('.open', 'click', function(event){
+              $(this).addClass('oppenned');
+              event.stopPropagation();
+            })
+            $(document).delegate('body', 'click', function(event) {
+              $('.open').removeClass('oppenned');
+            })
+            $(document).delegate('.cls', 'click', function(event){
+              $('.open').removeClass('oppenned');
+              event.stopPropagation();
+            });
+          });
+          </script>
     </head>
     <body>
+            <img id="Logo" src="img/NEWLOGO.png" alt="Logo">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <nav> 
-            <a href="index.html">Home</a> ||
-            <a href="about.html">About</a> ||
-            <a href="contact.html">Contact Us</a> ||
-            <a href="Menu.html">Menu</a>
-         </nav>
+        <div class="open"> 
+            <span class="cls"></span> 
+            <span>
+              <ul class="sub-menu ">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
+                <li> <a href="about.html">About</a> </li>
+                <li> <a href="Menu.html">Menu</a> </li>
+              </ul>
+            </span> 
+            <span class="cls"></span> 
+        </div>
+        
+        <p>Bakers Dozen Donuts
+                (regular donuts: chocolate frosted, vanilla frosted,<br/>
+                boston cream, jelly filled, cream filled, glazed, chocolate glazed,<br/>
+                marble twist, sugar raised, plain donut, plain cruller, honey<br/>
+                wheat, jelly puff, cream puff, coffee roll.)<br/>
+                (13) 8.65<br/><br/>
+                regular donuts: chocolate frosted, vanilla frosted, boston cream,<br/>
+                jelly filled, cream filled, glazed, chocolate glazed, marble twist,<br/>
+                sugar raised, plain donut, plain cruller, honey wheat, jelly puff,<br/>
+                cream puff, coffee roll.<br/>
+                1.05<br/><br/>
+                fancy donuts: bow tie, éclair, apple turnover, fancy coffee roll.<br/>
+                2.00<br/><br/>
+                French Cruller<br/>
+                2.00</p>
+        <aside>
+            <p id="BS">
+               Our best sellers:<br/> 
+               Pistachio Pinwheels<br/>
+               Boston Cream delights<br/>
+               Chocolate confetti<br/>
+               Marshmallow Mayhems<br/>
+               French twists<br/>
+               Bulls Horns <br/>     
+               <img id="Vets" src="img/Vets.gif" alt="Vets Eat Free">          
+            </p>
+        </aside>
+
+
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
